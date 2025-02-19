@@ -5,28 +5,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="description"
-        content="Microsoft Software Download Listing lets you browse and download products from Microsoft Software Download.">
+        content="Список загрузок программного обеспечения Microsoft позволяет просматривать и загружать продукты с сайта Microsoft.">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="og:site_name" content="Microsoft Software Download Listing">
-    <meta property="og:title" content="Microsoft Software Download Listing">
+    <meta property="og:site_name" content="Список образов Microsoft Windows">
+    <meta property="og:title" content="Список образов Microsoft Windows">
     <meta property="og:type" content="website">
     <meta property="og:description"
-        content="Microsoft Software Download Listing lets you browse and download products from Microsoft Software Download.">
-    <meta property="og:image" content="/img/cover.png">
+        content="Список загрузок программного обеспечения Microsoft позволяет просматривать и загружать продукты с сайта Microsoft.">
 
-    <title>Microsoft Software Download Listing</title>
+    <title>Список образов Microsoft Windows</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+    <link rel="stylesheet" href="css/pizdec.css">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/msdl.js"></script>
 </head>
 
 <body>
-    <h1>Microsoft Software Download Listing 🏳️‍🌈</h1>
+    <h1>Список образов Microsoft Windows🍕 (AKA MSDL)</h1>
 
-    <a href="https://github.com/gravesoft/msdl">
-        <b>Source code on GitHub</b>
+    <a href="https://eblo.lol">
+        <b>Made by Xelvorn</b>
     </a>
 
     <noscript>
@@ -34,18 +33,18 @@
     </noscript>
 
     <div id="products-list">
-        <h2>Select product</h2>
+        <h2>Выберите версию</h2>
         <input id="search-products" type="search" placeholder="Search with regex..." onInput="updateResults();">
         <div id="quick-search">
             📌
             <button onClick="setSearch('Windows 8\\.1');">Windows 8.1</button>
-            <button onClick="setSearch('Windows 10 22H2');">Latest Windows 10</button>
-            <button onClick="setSearch('24H2');">Latest Windows 11</button>
+            <button onClick="setSearch('Windows 10 22H2');">Последняя Windows 10</button>
+            <button onClick="setSearch('24H2');">Последняя Windows 11</button>
         </div>
         <table style="table-layout: auto;">
             <thead>
                 <tr>
-                    <th>Product</th>
+                    <th>Версия</th>
                     <th>ID</th>
                 </tr>
             </thead>
@@ -56,19 +55,18 @@
     <div id="msdl-ms-content"></div>
 
     <div id="msdl-please-wait">
-        <h2>Please wait...</h2>
-        <p>Please wait while the data you requested is being retrieved.</p>
+        <h2>Пожалуйста, ожидай...</h2>
+        <p>Пожалуйста, подождите, пока запрошенные вами данные будут получены.</p>
     </div>
 
     <div id="msdl-processing-error">
-        <h2>Error</h2>
-        <p>An error has occurred while processing your request. If reloading the page does not work, <a
-                href="https://gravesoft.dev/troubleshoot/">contact us</a> or create an issue on GitHub.</p>
+        <h2>Черт! Ошибка....</h2>
+        <p>При обработке вашего запроса произошла ошибка. Попробуйте еще раз.</p>
     </div>
 
     <div id="back-to-products">
         <hr>
-        <button onClick="backToProducts();">Go back to the product list</button>
+        <button onClick="backToProducts();">Вернуться к списку версий</button>
     </div>
 
     <input id="msdl-session-id" type="hidden">
