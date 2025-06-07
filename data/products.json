@@ -5,4 +5,16 @@
   "3114": "Windows 11 24H2 Home China",
   "3115": "Windows 11 24H2 Pro China",
   "3131": "Windows 11 Arm64 24H2"
+  "48": "Windows 8.1 Single Language",
+  "52": "Windows 8.1",
+  "55": "Windows 8.1 N",
+  "61": "Windows 8.1 K",
+  "62": "Windows 8.1 KN",
+  "79": "Windows 10 1507",
+  "80": "Windows 10 1507 KN",
+  "81": "Windows 10 1507 N",
+  "82": "Windows 10 1507 Single Language",
+  "99": "Windows 10 1511",
+  "104": "Windows 10 1511 KN",
+  "105": "Windows 10 1511 N"
 }
